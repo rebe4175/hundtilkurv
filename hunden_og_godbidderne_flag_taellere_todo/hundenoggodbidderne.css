@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+}
+
+.scene {
+    width: 100vw;
+    height: 40vw;
+    background-color: antiquewhite;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+#hundcontainer {
+    width: 30vw;
+    height: 20vw;
+
+    position: absolute;
+    top: 40%;
+}
+
+.hundStartPos {
+    left: 0;
+}
+
+#hund {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/gonzo.jpg);
+    background-size: 400% 200%;
+}
+
+.hundStartPic {
+    background-position: 0% 0%;
+}
+
+.hundKommerInd {
+    animation: hundKommerInd_kf 2s 1 both;
+}
+
+@keyframes hundKommerInd_kf {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 17%;
+    }
+}
+
+.hundErInde {
+    left: 17%;
+}
+
+
+
+.hundSpisGodbid {
+    animation-name: hundSpisGodbid_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+@keyframes hundSpisGodbid_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -400% 0%;
+    }
+}
+
+.hundTilKurvMaet {
+
+    animation-name: hundTilKurvMaet_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+@keyframes hundTilKurvMaet_kf {
+
+    100% {
+        left: 60%;
+    }
+}
+
+.puls {
+    animation: puls_kf 0.5s infinite alternate linear;
+}
+
+@keyframes puls_kf {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.8);
+    }
+}
+
+.hundTilKurv {
+    animation: hundTilKurv_kf 2s 1 both;
+}
+
+@keyframes hundTilKurv_kf {
+
+    100% {
+        left: 60%;
+    }
+}
+
+
+#kurvcontainer {
+    width: 30vw;
+    height: 20vw;
+
+    position: absolute;
+    top: 40%;
+    right: 0;
+
+}
+
+#kurv {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/gonzo.jpg);
+    background-size: 400% 200%;
+}
+
+.kurvStartPic {
+    background-position: 0% 100%;
+}
+
+
+.kurvMaet {
+    background-position: -200% 100%;
+}
+.kurvKed {
+    background-position: -100% -100%;
+}
+.skaal {
+    width: 15vw;
+    height: 15vw;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+}
+
+.godbid {
+    width: 3vw;
+    height: 2vw;
+    background-size: cover;
+    background-image: url(image/godbid.png);
+    position: absolute;
+}
+
+.handcursor{
+
+    cursor:pointer;
+}
+
+
+
+.pos1 {
+    top: 60%;
+    left: 40%;
+}
+
+.pos2 {
+    top: 60%;
+    left: 65%;
+}
+
+.pos3 {
+    top: 60%;
+    left: 15%;
+}
+
+.pos4 {
+    top: 40%;
+    left: 40%;
+}
+
+.pos5 {
+    top: 40%;
+    left: 15%;
+}
+
+.pos6 {
+    top: 40%;
+    left: 65%;
+}
+
+.pos7 {
+    top: 80%;
+    left: 40%;
+}
+
+.pos8 {
+    top: 80%;
+    left: 15%;
+}
+
+.pos9 {
+    top: 80%;
+    left: 65%;
+}
